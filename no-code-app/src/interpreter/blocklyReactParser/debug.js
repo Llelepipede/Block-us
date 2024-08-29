@@ -1,3 +1,4 @@
+// fonction de debug assez pratique , mais rien de fou.
 export function debug(block,index) {
     console.log(`Block ${index + 1}:`);
     console.log(`  Type: ${block.type}`);

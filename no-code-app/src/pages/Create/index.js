@@ -38,17 +38,13 @@ const Index = () => {
     console.log(workspaceContent);
     console.log(blocksContent);
 
+    // la sorcellerie est ici :
+    // vas faloir que j'y touche c'est pas encore ultra opti mais le coeur y est
     const newChildren = React.cloneElement(workspaceContent.props.children,...blocksContent)
     console.log(newChildren);
     setWorkspaceContent(React.cloneElement(workspaceContent,newChildren.props));
-    // setWorkspaceContent(newChildren);
-    // blocksContent.forEach(composant => {
-      
-    //   // workspaceContent.props.children = [...workspaceContent.props.children,composant]
-      
-    // });
+
     console.log(workspaceContent);
-    // this.forceUpdate()
 
   };
 

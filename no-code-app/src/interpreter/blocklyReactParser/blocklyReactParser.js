@@ -3,6 +3,9 @@ import Workspace from "../../components/Workspace";
 import Button from "../../components/createdComponents/Button";
 import Text from "../../components/createdComponents/Text";
 
+
+// ici y'auras tout le coeur du parser/interpreter, chaque block aura sont output précisé ici meme
+// atm y'a que button et text, mais c'est ici qu'il y auras div par exemple, image, ou autre
 export function blocklyReactParser(workspaceJson)  {
   var content = [Workspace]
     if (workspaceJson && workspaceJson.blocks && workspaceJson.blocks.blocks){

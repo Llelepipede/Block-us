@@ -52,19 +52,3 @@ Blockly.defineBlocksWithJsonArray([
     "helpUrl": ""
   },
 ]);
-
-export function reactBlocksGenerator(generator) {
-  // Define the code generation logic for the custom block
-  generator['react_button'] = function(block) {
-    var buttonText = block.getFieldValue('BUTTON_TEXT');
-    return `<button>${buttonText}</button>\n`;
-  };
-
-  generator['react_text'] = function(block) {
-    var buttonText = block.getFieldValue('TEXT_TEXT');
-    return `<button>${buttonText}</button>\n`;
-  };
-
-  generator['react_div'] = function(block) {
-  };
-}
