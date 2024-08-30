@@ -1,9 +1,10 @@
 // src/Button.js
 import React from 'react';
 
-const index = ({ text }) => {
+const index = () => {
   return (
-    <p>{text}</p>
+    <div >
+    </div>
   );
 };
 

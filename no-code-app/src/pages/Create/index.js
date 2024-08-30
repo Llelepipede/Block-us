@@ -34,15 +34,15 @@ const Index = () => {
   }, []);
 
   const generateCode = () => {
-    const blocksContent = blocklyReactParser(Blockly.serialization.workspaces.save(workspaceRef.current));
-    console.log(workspaceContent);
-    console.log(blocksContent);
+    // const blocksContent = blocklyReactParser(Blockly.serialization.workspaces.save(workspaceRef.current));
+    // console.log(workspaceContent);
+    // console.log(blocksContent);
 
     // la sorcellerie est ici :
     // vas faloir que j'y touche c'est pas encore ultra opti mais le coeur y est
-    const newChildren = React.cloneElement(workspaceContent.props.children,...blocksContent)
-    console.log(newChildren);
-    setWorkspaceContent(React.cloneElement(workspaceContent,newChildren.props));
+    // const newChildren = React.cloneElement(workspaceContent.props.children,...blocksContent)
+    // console.log(newChildren);
+    setWorkspaceContent(blocklyReactParser(Blockly.serialization.workspaces.save(workspaceRef.current),workspaceContent));
 
     console.log(workspaceContent);
 
