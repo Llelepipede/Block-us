@@ -4,10 +4,7 @@ import React from 'react';
 const Initializer = () => {
   return (
     <div >
-        <div >
-        </div>
-        <div >
-        </div>
+
     </div>
   );
 };
